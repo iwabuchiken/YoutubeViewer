@@ -30,13 +30,13 @@
                 android:id="@+id/btn1start"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lets start!" />
+                android:text="Yes!" />
 
             <Button
                 android:id="@+id/btn1stop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Stop" />
+                android:text="Stop!!" />
 
         </LinearLayout>
 
@@ -68,7 +68,7 @@
                 android:id="@+id/btn2start"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lets start!" />
+                android:text="Yes!" />
 
             <Button
                 android:id="@+id/btn2stop"
@@ -104,7 +104,7 @@
                 android:id="@+id/btn3start"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lets start!" />
+                android:text="Yes!" />
 
             <Button
                 android:id="@+id/btn3stop"

@@ -15,7 +15,9 @@ public class YoutubeViewerActivity extends TabActivity {
         super.onCreate(savedInstanceState);
         
         // create tabs
-        TabUtils.createTabs(this);
+//        TabUtils.createTabs(this);
+        TabUtils.createTabsN(this, 3);
+//        TabUtils.createTabsN(this, 6);
         
 //        // get a TabHost
 //        TabHost tabHost = getTabHost();

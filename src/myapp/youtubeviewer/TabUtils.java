@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
+import android.widget.Toast;
 
 
 public class TabUtils {
@@ -65,18 +66,31 @@ public class TabUtils {
     	//debug
     	TabSpec[] tabs = new TabSpec[number];
     	
+//    	for (int i = 0; i < tabs.length; i++) {
     	for (int i = 0; i < tabs.length; i++) {
 			tabs[i] = tabHost.newTabSpec("tab" + String.valueOf(i));
+			tabs[i].setIndicator(
+							"Timer" + String.valueOf(i),
+							mainActivity.getResources().getDrawable(android.R.drawable.ic_menu_edit));
+//			tabs[i].setContent((new MyLib().getIdMap()).get(i).intValue());
+			tabs[i].setContent(new MyLib().getIdMap().get(i).intValue());
 		}
     	
     	for (int i = 0; i < tabs.length; i++) {
     		tabHost.addTab(tabs[i]);
 		}
     	
+//    	// debug
+//		Toast.makeText(mainActivity,
+////				"hello",
+//				String.valueOf(new MyLib().getIdMap().get(1).intValue()),
+//				Toast.LENGTH_SHORT).show();
+    	
 //    	// タブ1の設定
 //        TabSpec tab1 = tabHost.newTabSpec("tab1");
 //        tab1.setIndicator("Timer1");
-//        tab1.setContent(R.id.tab1);
+////        tab1.setContent(R.id.tab1);
+//        tab1.setContent(new MyLib().getIdMap().get(1).intValue());
 //
 //        // タブ2の設定
 //        TabSpec tab2 = tabHost.newTabSpec("tab2");
@@ -87,7 +101,7 @@ public class TabUtils {
 //        TabSpec tab3 = tabHost.newTabSpec("tab3");
 //        tab3.setIndicator("Timer3",mainActivity.getResources().getDrawable(android.R.drawable.ic_menu_search));
 //        tab3.setContent(R.id.tab3);
-
+//
 //        // 各タブをTabHostに設定
 //        tabHost.addTab(tab1);
 //        tabHost.addTab(tab2);
