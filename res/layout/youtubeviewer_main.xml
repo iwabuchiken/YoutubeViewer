@@ -11,36 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical" >
-
-        <TextView
-            android:id="@+id/tv1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Timer 1"
-            android:textSize="18sp" />
-
-        <LinearLayout
-            android:id="@+id/btns1"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <Button
-                android:id="@+id/btn1start"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Yes!" />
-
-            <Button
-                android:id="@+id/btn1stop"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Stop!!" />
-
-        </LinearLayout>
-
-    </LinearLayout>
+        
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+            
+     </LinearLayout>
 
 <!-- LinearLayout 2 -->
 
@@ -74,7 +52,7 @@
                 android:id="@+id/btn2stop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Stop" />
+                android:text="Stop!!" />
 
         </LinearLayout>
     </LinearLayout>
@@ -110,7 +88,7 @@
                 android:id="@+id/btn3stop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Stop" />
+                android:text="Stop!!" />
 
         </LinearLayout>
     </LinearLayout>
